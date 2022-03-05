@@ -8,7 +8,7 @@ public class EmployeeWage {
     public static final int MAX_WORKING_HRS=100;
     public static final int PROBLEMATIC_SCENARIO=36;
 
-    public static void main(String[] args) {
+    public static int computeEmpWage() {
         int empHr=0;
         int attendance;
         int totalWorkingDays=0,totalEmpHrs=0,totalEmpWage=0;
@@ -39,5 +39,10 @@ public class EmployeeWage {
         totalEmpWage = EMP_WAGE_PER_HR * totalEmpHrs;
         System.out.println("Employee worked for "+totalWorkingDays+" days "+totalEmpHrs+" hours");
         System.out.println("Employee's Monthly wage is " + totalEmpWage);
+        return totalEmpWage;
+    }
+    public static void main(String[] args){
+        // EmployeeWage EmployeeWage=new EmployeeWage();
+         computeEmpWage();
     }
 }
